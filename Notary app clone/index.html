@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <meta name="description" content="MS Library - Library Management System">
+
+    <meta name="author" content="Morning Sun IT | Goutam Bishwas">
+
+    <meta name="copyright" content="morningsunit">
+
+
+    <title>Documentation | MorningsunIT</title>
+
+    <link rel="shortcut icon" href="img/msit_sort_logo.png" title="Morning Sun IT" />
+
+    <meta name="generator" content="Bootply" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="Bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="google-code-prettify/prettify.css" media="screen">
+
+
+    <script src="google-code-prettify/_run_prettify.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Play:400,700&subset=cyrillic,cyrillic-ext,greek,latin-ext" rel="stylesheet">
+
+
+    <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".nav-side-menu">
+
+    <section>
+
+        <div class="col-md-3" style="padding-left:0px; padding-right:0px;">
+
+            <div class="nav-side-menu">
+
+                <div class="brand"><img class="img-responsive" width="99%" title="Library Management System for Morning Sun IT" src="img/250X80.png" /></div>
+
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+
+                <div class="menu-list">
+
+
+                    <ul id="menu-content" class="menu-content collapse">
+
+                        <a href="#">
+
+                            <li class="welcome">
+
+                                <i class="fa"></i> Welcome
+
+                            </li>
+
+                        </a>
+
+                        <a href="#system_requirement" class="sys_req">
+
+                            <li>
+
+                                <i class="fa"></i> System Requirement
+
+                            </li>
+
+                        </a>
+
+                        <a href="#feature" class="feature">
+
+                            <li>
+
+                                <i class="fa"></i> Features
+
+                            </li>
+
+                        </a>
+
+
+                        <a href="#installation" class="ins">
+
+                            <li>
+
+                                <i class="fa"></i> Installation
+
+                            </li>
+
+                        </a>
+
+                        <a href="#started" class="stard">
+
+                            <li>
+
+                                <i class="fa"></i> How to get Started
+
+                            </li>
+
+                        </a>
+
+                        <a href="#devolopment_support">
+
+                            <li>
+
+                                <i class="fa"></i> Developer Support
+
+                            </li>
+
+                        </a>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- close menu -->
+
+
+        <div class="col-md-9 pull-right">
+
+            <div id="home" class="col-md-12 mini-hight">
+
+                <h2>MS-Library - Library Management System &nbsp;&nbsp;&nbsp;v3.3</h2>
+                <hr>
+
+                <p>Created: 24-July-2021<br> By: Morning Sun IT ( <a href="http://www.morningsunit.com" target="_blank">morningsunit.com
+                    </a>)<br> Support: Online Help line Desk ( <a href="http://www.support.morningsunit.com" target="_blank">support.morningsunit.com </a> )<br> Details of Library Management System v.3.3 documentation
+
+                </p>
+
+
+            </div>
+            <!--close welcome part-->
+
+            <div id="system_requirement" class="col-md-12 mini-hight">
+
+                <h2> System Requirement </h2>
+                <hr>
+
+                <pre class="prettyprint linenums ">
+
+PHP 7.3
+
+MYSQL 5+
+
+PHP Mcrypt Extention
+
+PHP MBString Extension
+
+PHP DOM Extension
+
+PHP GD Extension
+
+PHP MYSQL Extension
+
+PHP PDO Extention
+
+PHP CURL Extention
+
+</pre>
+
+            </div>
+            <!--close system requirement part-->
+
+
+            <div id="feature" class="col-md-12 mini-hight">
+
+                <h2> Feature</h2>
+                <hr>
+
+                <pre class="prettyprint linenums ">
+
+Dashboard with visual summary of the complete system.
+
+Graphical presentations of issues and returns.
+
+Fully responsive and cross platform supported.
+
+Multiple Language facilities.
+
+Dynamic modules for Library management.
+
+Dignified module to categorize Books.
+
+Separate module to categorize Member type.
+
+Define User type with Account creation and password changing option.
+
+Customized User role Permission settings.
+
+Personalized Settings for Updating/Changing Ownership or Business Information.
+
+Generate multiple reports (Book, Membership, Payment, and Category).
+
+Automatic error validation system.
+
+An Admin user gets auto created on start-up.
+
+The Admin only access the system settings.
+
+Admin creates desired type of users (Authority, Librarian, and Operator).
+
+The admin can edit/update/delete any user and information.
+
+The Authority can create/edit/delete any library and Member information.
+
+The Authority/Librarian can control all Library and Member related issues.
+
+An Operator and a Member has distinguished user interface.
+
+An Operator has access to issue and return books.
+
+A Member only views Membership profile and status.
+
+Book Request Service.
+
+Payment option for Penalty fees.
+
+Generate Membership card with QR Code.
+
+Separated Waste/Lost Book List.
+
+Book Archive Option.
+
+24/7 Alert service with notification.
+
+Easy password changing facility.
+
+Forgot Password facility with validation code. 
+
+SMTP configuration.
+
+</pre>
+
+            </div>
+
+
+            <div id="installation" class="col-md-12 mini-hight">
+
+                <h2> Installation </h2>
+
+                <p> <strong>Please follow below instructions carefully:</strong> </p>
+                <hr>
+
+                <pre class="prettyprint linenums ">
+
+An Active Internet connection is necessary to install successfully.
+
+Unzip and copy the script folder in your hosting server.
+
+Make sure in script folder index.php file have permission as 644.
+
+Manually create a database using “Phpmyadmin”.
+
+Run the install script path from any web browser (http://server.com/install/index).
+
+if pre-install checklist seems all ok then click next.
+
+Enter the purchase key carefully provided by ENVATO.
+
+Provide hostname, database name, username and password.
+
+After filling up all input fields, click next.
+
+Then fill up organization information and admin login information and click next.
+
+Now click 'Finished' button, then view login page.
+
+</pre>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/1.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/2.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/3.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/4.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/5.png" />
+
+            </div>
+
+
+            <div id="started" class="col-md-12 mini-hight">
+
+                <h2>How to get Started</h2>
+                <hr>
+
+                <h4><strong>1. Dashboard</strong></h4>
+
+                <p>When you login after the installation you will get a complete blank Dashboard</p>
+
+                <p>First of all, set the Settings and Permissions menu as you like</p>
+
+                <pre class="prettyprint linenums">
+
+Short summary are there with quick link.
+
+Issued and Returned bar chart are visible. 
+
+Categories table will be visible here.
+
+Last 5 Issued and Rerurned table will be shown here and you can easily go to the details page.
+
+</pre>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/dashboard.png" />
+
+                <br>
+
+
+
+                <h4><strong>2. Settings</strong></h4>
+
+                <pre class="prettyprint linenums ">
+
+The Settings menu contains Membership List, Company Profile, Users, Publication, Email Config.
+
+We are providing a column by default Membership.
+
+You Can easily Add, Edit, Delete and change status 'on/off' for Membership and Publication.
+
+Membership are necessary for Issued and Returend Book.
+
+The Publication is required at the time of adding any Book.
+
+You can change your business information from Company Profile and we can also change the default prefix if you want.
+
+You can change Language information from Company Profile.
+
+You can easily Add, Edit, change password or Delete any User.
+
+Remember to add the User Role from the Permissions menu, before adding a user.
+
+</pre>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/9.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/8.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/6.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/7.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/10.png" />
+
+                <br>
+
+
+                <h4><strong>3. Permissions</strong></h4>
+
+                <p></p>
+
+                <pre class="prettyprint linenums ">
+
+It has two sub menu called User Role and Permission.
+
+You can create user roles as you like from the user role sub menu.
+
+You can add/change permissions according to the user role from the permissions sub menu.
+
+Remember, the Settings and Permissions menu does not permit a user role.
+
+</pre>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/11.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/12.png" /><br>
+
+                <br>
+
+
+                <h4><strong>4. Book</strong></h4>
+
+                <p></p>
+
+                <pre class="prettyprint linenums ">
+
+The Book menu contains Categories, Archive, Wastage, Writer.
+
+We are providing a column by default Categories.
+
+You Can easily Add, Edit, Delete and change status 'on/off' for Categories, Archive and Writer.
+
+Categories and Writer are necessary for Add new Books.
+
+You can easily add and returned Wastage book list. 
+
+</pre>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/13.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/14.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/15.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/16.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/17.png" />
+
+                <br>
+
+
+                <h4><strong>5. Member</strong></h4>
+
+                <p></p>
+
+                <pre class="prettyprint linenums ">
+
+The Member menu contains Member List and Genarate ID Card.
+
+You can easily add Member from the 'Add Member' button.
+
+You can easily change Member status (e.g. Active/deactive).
+
+This Member List is required for Issued Book. 
+
+Easily Genarate ID Card for member.
+
+</pre>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/18.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/19.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/20.png" />
+
+                <br>
+
+                <h4><strong>6. Circulation</strong></h4>
+
+                <p></p>
+
+                <pre class="prettyprint linenums ">
+
+There will be list of Circulation.
+
+Easily Book Issued and returned from the 'Issued and returned' button.
+
+After pressing the 'Issued and returned' button, a dialog box will open, where you have to search for the member ID and enter the member specific panel.
+
+You can issue books through book ID from issue area.
+
+Use the following instructions for the books issued from the action column of the book list.such as renewal,return, lost.
+
+</pre>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/21.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/22.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/23.png" />
+
+
+                <br>
+
+                <h4><strong>7. Payment</strong></h4>
+
+                <p></p>
+
+                <pre class="prettyprint linenums ">
+
+Here are Payment options for any kind of Penalty.
+
+You can easily view and print money Receipt.
+
+</pre>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/24.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid; " src="img/25.png" />
+
+
+                <br>
+
+                <h4><strong>8. Book Request</strong></h4>
+
+                <p></p>
+
+                <pre class="prettyprint linenums ">
+
+There will be list of Book Request.
+
+Add Book Request in Here.
+
+</pre>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/26.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid; " src="img/27.png" />
+
+
+                <br>
+
+                <h4><strong>9. Report</strong></h4>
+
+                <p></p>
+
+                <pre class="prettyprint linenums ">
+
+There will be different type of report here.
+
+Date range report are shown here.
+
+Individual report also there.
+
+Reports are also printable.
+
+</pre>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid" src="img/28.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid; " src="img/29.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid; " src="img/31.png" /><br>
+
+                <img class="img-responsive" title="MS Library Management System for Morning Sun IT" style="border:1px #CCC solid; " src="img/32.png" /><br>
+
+                <br>
+
+            </div>
+
+
+            <div id="devolopment_support" class="col-md-12 mini-hight">
+
+                <h2> Developer Support </h2>
+                <hr>
+
+                <div class="col-sm-4">
+
+                    Our official Support Desk
+
+                    <a href="https://www.morningsunit.com/" target="_blank"><img class="img-responsive" title="MS Library Management System for Morning Sun IT" src="img/MSITLOGO.png" /><br></a>
+
+                </div>
+
+                <!-- <div class="col-sm-4">
+
+    Skype
+
+    <a href="skype:inilabsn" target="_blank"><img class="img-responsive" title="MS Library Management System for Morning Sun IT" src="assets/img/skype.png"/></a><br>
+
+  </div> -->
+
+            </div>
+            <!--close Students Access part-->
+
+        </div>
+        <!-- close contant body--->
+
+
+        </div>
+
+    </section>
+
+    <script type="text/livescript">
+    </script>
+
+
+</body>
+
+
+</html>
